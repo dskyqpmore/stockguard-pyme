@@ -33,16 +33,22 @@ Datos iniciales:
 - categoría
 
 ## Ejemplos de productos
-
-- Coca-Cola 1.5L
-- Pan de molde
-- Cuaderno universitario 100 hojas
-- Detergente líquido 3L
-- Pilas AA
+- Yogurth Soprole durazno 120gr
+- Leche entera surlat 1 litro  
+- Arroz tucapel grado 1 1 kilo
 
 ## 4. Categoría
 
 Representa una clasificación para ordenar los productos.
+
+Ejemplos:
+
+- Bebidas
+- Abarrotes
+- Aseo
+- Librería
+- Confites
+- Perecibles
 
 Datos iniciales:
 
@@ -50,14 +56,6 @@ Datos iniciales:
 - nombre
 - descripción
 - activo
-
-## Ejemplos de categorías
-
-- Bebidas
-- Abarrotes
-- Aseo
-- Librería
-- Confites
 
 ## 5. Proveedor
 
