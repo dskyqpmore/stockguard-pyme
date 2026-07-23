@@ -1,0 +1,18 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: stockguard_postgres
+    restart: always
+    environment:
+      POSTGRES_DB: stockguard_pyme
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - stockguard_postgres_data:/var/lib/postgresql/data
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/01_schema.sql
+      - ./database/seed.sql:/docker-entrypoint-initdb.d/02_seed.sql
+
+volumes:
+  stockguard_postgres_data:
